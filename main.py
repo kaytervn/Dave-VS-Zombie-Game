@@ -6,25 +6,25 @@ import pygame
 sc = turtle.Screen()
 sc.setup(width=800, height=800)
 sc.title("Dave vs Zombie")
-sc.addshape("dave.gif")
-sc.addshape("dave_rv.gif")
-sc.addshape("mower.gif")
-sc.addshape("mower_rv.gif")
-sc.addshape("yard.gif")
-sc.addshape("tomb.gif")
-sc.addshape("win.gif")
-sc.addshape("gameover.gif")
-sc.addshape("taco.gif")
-sc.addshape("hotsauce.gif")
-sc.addshape("chickenbucket.gif")
-sc.addshape("zombie1.gif")
-sc.addshape("zombie2.gif")
-sc.addshape("zombie3.gif")
-sc.addshape("zombie4.gif")
-sc.addshape("zombie5.gif")
-sc.addshape("zombie6.gif")
-sc.addshape("zombie7.gif")
-sc.bgpic("yard.gif")
+sc.addshape("images/dave.gif")
+sc.addshape("images/dave_rv.gif")
+sc.addshape("images/mower.gif")
+sc.addshape("images/mower_rv.gif")
+sc.addshape("images/yard.gif")
+sc.addshape("images/tomb.gif")
+sc.addshape("images/win.gif")
+sc.addshape("images/gameover.gif")
+sc.addshape("images/taco.gif")
+sc.addshape("images/hotsauce.gif")
+sc.addshape("images/chickenbucket.gif")
+sc.addshape("images/zombie1.gif")
+sc.addshape("images/zombie2.gif")
+sc.addshape("images/zombie3.gif")
+sc.addshape("images/zombie4.gif")
+sc.addshape("images/zombie5.gif")
+sc.addshape("images/zombie6.gif")
+sc.addshape("images/zombie7.gif")
+sc.bgpic("images/yard.gif")
 
 
 class Player(turtle.Turtle):
@@ -32,7 +32,7 @@ class Player(turtle.Turtle):
         turtle.Turtle.__init__(self)
         self.penup()
         self.speed(0)
-        self.shape("dave.gif")
+        self.shape("images/dave.gif")
         self.goto(-300, 0)
 
     def move_up(self):
@@ -44,12 +44,12 @@ class Player(turtle.Turtle):
             self.goto(self.xcor(), self.ycor() - 90)
 
     def move_forward(self):
-        self.shape("dave.gif")
+        self.shape("images/dave.gif")
         if self.xcor() < 284:
             self.goto(self.xcor() + 73, self.ycor())
 
     def move_backward(self):
-        self.shape("dave_rv.gif")
+        self.shape("images/dave_rv.gif")
         if self.xcor() > -300:
             self.goto(self.xcor() - 73, self.ycor())
 
@@ -101,7 +101,7 @@ class Tomb(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(900, 900)
-        self.shape("tomb.gif")
+        self.shape("images/tomb.gif")
 
     def appear(self, object):
         self.goto(object.xcor(), object.ycor())
@@ -139,12 +139,12 @@ class End(turtle.Turtle):
         self.state = False
 
     def appear_win(self):
-        self.shape("win.gif")
+        self.shape("images/win.gif")
         self.goto(0, 0)
         self.state = True
 
     def appear_lose(self):
-        self.shape("gameover.gif")
+        self.shape("images/gameover.gif")
         self.goto(0, 0)
         self.state = True
 
@@ -183,11 +183,11 @@ class Score(turtle.Turtle):
 
 def place_mower():
     if mower.xcor() < -400 or mower.xcor() > 400:
-        if player.shape() == "dave.gif":
-            mower.shape("mower.gif")
+        if player.shape() == "images/dave.gif":
+            mower.shape("images/mower.gif")
             mower.setheading(0)
         else:
-            mower.shape("mower_rv.gif")
+            mower.shape("images/mower_rv.gif")
             mower.setheading(180)
         mower.goto(player.xcor(), player.ycor() - 50)
 
@@ -213,15 +213,15 @@ play_sound("Loonboon.mp3")
 yard_ycors = [180, 90, 0, -90, -180]
 yard_xcors = [-300, -227, -154, -81, -8, 65, 138, 211, 284]
 zom_skins = [
-    "zombie1.gif",
-    "zombie2.gif",
-    "zombie3.gif",
-    "zombie4.gif",
-    "zombie5.gif",
-    "zombie6.gif",
-    "zombie7.gif",
+    "images/zombie1.gif",
+    "images/zombie2.gif",
+    "images/zombie3.gif",
+    "images/zombie4.gif",
+    "images/zombie5.gif",
+    "images/zombie6.gif",
+    "images/zombie7.gif",
 ]
-item_skins = ["chickenbucket.gif", "hotsauce.gif", "taco.gif"]
+item_skins = ["images/chickenbucket.gif", "images/hotsauce.gif", "images/taco.gif"]
 
 zombies = [Zombie() for _ in range(4)]
 player = Player()
