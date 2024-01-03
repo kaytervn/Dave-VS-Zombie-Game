@@ -251,7 +251,7 @@ while not end.state:
             zb.jump()
         if isCollision(player, zb) or zb.xcor() < -400:
             end.appear_lose()
-    if score.score >= 100 and score.items_collected > 10:
+    if score.score >= 100 and score.items_collected >= 10:
         end.appear_win()
 
 pygame.mixer.music.stop()
