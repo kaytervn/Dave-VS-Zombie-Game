@@ -8,7 +8,7 @@ Kết hợp kiến thức của nửa cuối học phần 2 và nửa đầu h�
 
 Điều khiển một nhân vật là Dave bảo vệ ngôi nhà của mình khỏi những con zombie.
 - Di chuyển Dave bằng các phím mũi tên và thả ra máy cắt cỏ bằng phím “Space”.
-- Người chơi vừa phải tiêu diệt zombie vừa phải nhặt các vật phẩm được rơi ra trên sân để hoàn thành màn chơi. Mỗi con zombie bị tiêu diệt sẽ được +10 điểm.
+- Người chơi vừa phải tiêu diệt zombie vừa phải nhặt các vật phẩm được rơi ra trên sân để hoàn thành màn chơi. Mỗi con zombie bị máy cắt cỏ tiêu diệt sẽ được +10 điểm.
 - Chiến thắng: Nhặt đủ 10 vật phẩm và đạt số điểm là 100.
 - Thất bại: Khi Dave chạm phải zombie hoặc để cho bất kỳ zombie nào tấn công vào nhà.
 
