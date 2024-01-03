@@ -27,7 +27,7 @@ GUI turtle:
 - shape: chèn ảnh cho đối tượng.
 - listen, onkey: đặt lệnh cho các phím được nhấn.
 - Dùng vòng lặp while để duy trì chương trình.
-- Giới hạn di chuyển trong biên: kiểm tra tọa độ xcor (), ycor().
+- Giới hạn di chuyển trong biên: kiểm tra tọa độ xcor(), ycor().
 - write, clear: hiển thị và cập nhật điểm số.
 
 Chèn âm thanh: sử dụng thư viện pygame.
