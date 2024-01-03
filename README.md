@@ -16,6 +16,8 @@ Kết hợp kiến thức của nửa cuối học phần 2 và nửa đầu h�
 
 <h3>Học phần 2 và 3</h3>
 
+Áp dụng OOP: thiết lập các phương thức và thuộc tính của đối tượng.
+
 Sử dụng module:
 - math: tính khoảng cách va chạm.
 - random: đặt vị trí ngẫu nhiên, đổi trang phục ngẫu nhiên.
